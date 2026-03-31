@@ -16,11 +16,19 @@ const initialState = {
     },
   };
 
-// Şu anda yalnızca alınan Redux durumunu geri döndüren bir reducer kullanıyoruz
-const rootReducer = (state = initialState, action) => {
-    return state;
+  const rootReducer = (state = initialState, action) => {
+    // Reducer, eylemleri type özelliğinin değerine göre ayırır
+    switch (action.type) {
+      // Eylem türüne bağlı olarak farklı bir mantık uygulanacaktır
+  
+     // Her reducer, store'a gönderilen tüm eylemleri alır.
+     // Eğer bir reducer, belirli bir eylem türünü işlemek istemiyorsa,
+     // mevcut durumu değişmeden döndürmek gerekir.
+      default:
+        return state;
+    }
   };
 
 export const store = configureStore({
-    reducer: rootreducer,
+    reducer: rootReducer,
 });

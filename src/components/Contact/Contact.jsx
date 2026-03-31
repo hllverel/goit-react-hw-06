@@ -1,4 +1,5 @@
 import css from './Contact.module.css'
+import { useSelector } from "react-redux";
 
 const Contact = ({ contact, onDelete }) => {
     const { name, number } = contact;
