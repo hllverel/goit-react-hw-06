@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import initialContacts from './contacts.json';
+import initialContacts from '../contacts.json';
 
 const slice = createSlice({
     name: 'contacts',
