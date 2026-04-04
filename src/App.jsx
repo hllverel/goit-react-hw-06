@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { setFilter } from './redux/filtersSlice';
+import { changeFilter } from './redux/filtersSlice';
 import ContactList from './components/ContactList/ContactList'
 import SearchBox from './components/SearchBox/SearchBox';
 import ContactForm from './components/ContactForm/ContactForm';
